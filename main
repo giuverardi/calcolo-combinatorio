@@ -1,0 +1,16 @@
+E = int(input("Inserisci il numero di eventi possibili E: "))
+F = int(input("Inserisci il numero di eventi possibili F: "))
+
+n = int(input("Inserisci il numero di oggetti: "))
+r = int(input("Inserisci il numero: "))
+
+def fattorial(number):
+    for i in range((number-1), 0, -1):        
+       number = number * i 
+    return number
+
+result = fattorial(n) / (fattorial(n - r) * fattorial(r))
+print("Il binomio di Newton è: ", result)
+
+EF = E*F
+print(EF)
